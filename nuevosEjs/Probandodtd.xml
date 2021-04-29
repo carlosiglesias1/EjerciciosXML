@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE paginas [
+    <!ELEMENT paginas (pag)>
+    <!ELEMENT pag (nombre,description)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+]>
+<paginas>
+    <pag>
+        <nombre>
+            Google
+        </nombre>
+        <description>
+            Página de google
+        </description>
+    </pag>
+</paginas>
