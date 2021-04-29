@@ -1,1 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE paginas [
+    <!ELEMENT paginas (pag)>
+    <!ELEMENT pag ()>
+]>
+
+<paginas>
+
+</paginas>
