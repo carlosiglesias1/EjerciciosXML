@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE examen2 [
+    <!ELEMENT examen2 (viaje+)>
+    <!ELEMENT viaje (diario?, origen, destino, hora_salida, hora_llegada)>
+    <!ATTLIST viaje codigo ID #REQUIRED>
+    <!ATTLIST viaje estado (E | R | C) (default:E) #REQUIRED>
+    <!ELEMENT diario EMPTY>
+    <!ELEMENT origen (#PCDATA)>
+    <!ELEMENT destino (#PCDATA)>
+    <!ELEMENT hora_salida (horas, minutos)>
+    <!ELEMENT hora_llegada (horas, minutos)>
+    <!ELEMENT horas (#PCDATA)>
+    <!ELEMENT minutos (#PCDATA)>
+]>
+<examen2>
+    <viaje codigo="CS01" estado="R">
+        <diario />
+        <origen>Coruña</origen>
+        <destino>Santiago</destino>
+        <hora_salida>
+            <horas>9</horas>
+            <minutos>30</minutos>
+        </hora_salida>
+        <hora_llegada>
+            <horas>11</horas>
+            <minutos>30</minutos>
+        </hora_llegada>
+    </viaje>
+    <viaje codigo="CF02" estado="E">
+        <origen>Coruña</origen>
+        <destino>Ferrol</destino>
+        <hora_salida>
+            <horas>10</horas>
+            <minutos>15</minutos>
+        </hora_salida>
+        <hora_llegada>
+            <horas>11</horas>
+            <minutos>15</minutos>
+        </hora_llegada>
+    </viaje>
+</examen2>

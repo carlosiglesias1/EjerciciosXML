@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE e1:examen [
+    <!ELEMENT e1:examen (e1:carta, e2:carta)>
+    <!ATTLIST e1:examen xmlns:e1 CDATA #FIXED "http://www.google.com">
+    <!ELEMENT e1:carta ((e1:palo, e1:numero)*)>
+    <!ELEMENT e1:palo (#PCDATA)>
+    <!ELEMENT e1:numero (#PCDATA)>
+    <!ELEMENT e2:carta (e2:carnes, e2:pescados)>
+    <!ATTLIST e2:carta xmlns:e2 CDATA #FIXED "https://www.google.com/es">
+    <!ELEMENT e2:carnes (e2:Solomillo_a_la_plancha, e2:Milanesa_de_ternera)>
+    <!ELEMENT e2:Milanesa_de_ternera EMPTY>
+    <!ELEMENT e2:Solomillo_a_la_plancha EMPTY>
+    <!ELEMENT e2:pescados (e2:Bacalao_a_la_portuguesa, e2:Merluza_a_la_gallega)>
+    <!ELEMENT e2:Bacalao_a_la_portuguesa EMPTY>
+    <!ELEMENT e2:Merluza_a_la_gallega EMPTY>
+]>
+<e1:examen xmlns:e1="http://www.google.com">
+    <e1:carta>
+        <e1:palo>Oros</e1:palo>
+        <e1:numero>7</e1:numero>
+        <e1:palo>Espadas</e1:palo>
+        <e1:numero>Rey</e1:numero>
+    </e1:carta>
+    <e2:carta>
+        <e2:carnes>
+            <e2:Solomillo_a_la_plancha/>
+            <e2:Milanesa_de_ternera/>
+        </e2:carnes>
+        <e2:pescados>
+            <e2:Bacalao_a_la_portuguesa/>
+            <e2:Merluza_a_la_gallega/>
+        </e2:pescados>
+    </e2:carta>
+</e1:examen>
