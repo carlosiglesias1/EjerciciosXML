@@ -3,7 +3,7 @@
     <!ELEMENT examen2 (viaje+)>
     <!ELEMENT viaje (diario?, origen, destino, hora_salida, hora_llegada)>
     <!ATTLIST viaje codigo ID #REQUIRED>
-    <!ATTLIST viaje estado (E | R | C) (default:E) #REQUIRED>
+    <!ATTLIST viaje estado (E | R | C) "E">
     <!ELEMENT diario EMPTY>
     <!ELEMENT origen (#PCDATA)>
     <!ELEMENT destino (#PCDATA)>
